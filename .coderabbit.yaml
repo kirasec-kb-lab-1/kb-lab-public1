@@ -4,3 +4,4 @@ reviews:
   profile: chill
   auto_approvals:
     enabled: true
+    allow_author_approval: false
