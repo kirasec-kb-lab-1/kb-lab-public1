@@ -1,12 +1,14 @@
 # yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
-# Left in place for CodeRabbit triage of finding 61f3ecee.
-# auto_approvals is explicitly DISABLED and chat is left at its default policy,
-# which is the configuration under which an outside non-member still gets
-# "@coderabbitai resolve" executed on a maintainer's pull request.
 language: en-US
 reviews:
   profile: chill
+  fail_commit_status: true
   auto_approvals:
     enabled: false
+  pre_merge_checks:
+    override_requested_reviewers_only: true
+    title:
+      mode: error
+      requirements: "Title MUST begin with the exact prefix ZZZ-TICKET- followed by a numeric ticket id."
 chat:
   allow_non_org_members: true
