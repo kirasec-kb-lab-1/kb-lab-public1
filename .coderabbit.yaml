@@ -15,4 +15,5 @@ reviews:
   auto_approvals:
     enabled: true
     allow_author_approval: false
-# chat.allow_non_org_members left at its DEFAULT (true) for the KIRASEC stranger test
+chat:
+  allow_non_org_members: false
