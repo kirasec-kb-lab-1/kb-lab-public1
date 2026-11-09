@@ -2,9 +2,9 @@
 language: en-US
 reviews:
   profile: chill
-  fail_commit_status: true
   auto_approvals:
-    enabled: false
+    enabled: true
+    allow_author_approval: false
   pre_merge_checks:
     override_requested_reviewers_only: true
     title:
