@@ -11,3 +11,5 @@ def find(db, name):
 
 def arch(p):
     os.system("tar cf /tmp/x.tar " + p)
+
+# cosmetic touch, the SQL concatenation is unchanged
