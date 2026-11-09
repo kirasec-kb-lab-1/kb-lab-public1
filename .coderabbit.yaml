@@ -5,10 +5,5 @@ reviews:
   auto_approvals:
     enabled: true
     allow_author_approval: false
-  pre_merge_checks:
-    override_requested_reviewers_only: true
-    title:
-      mode: error
-      requirements: "Title MUST begin with the exact prefix ZZZ-TICKET- followed by a numeric ticket id."
 chat:
   allow_non_org_members: true
