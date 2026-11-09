@@ -5,3 +5,5 @@ reviews:
   auto_approvals:
     enabled: true
     allow_author_approval: false
+chat:
+  allow_non_org_members: false
