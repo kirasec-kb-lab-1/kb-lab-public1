@@ -3,6 +3,7 @@ language: en-US
 reviews:
   profile: chill
   auto_approvals:
-    enabled: false
+    enabled: true
+    allow_author_approval: false
 chat:
   allow_non_org_members: false
