@@ -1,17 +1,18 @@
 # yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
-# Left in place for CodeRabbit triage of findings 61f3ecee and b979463c.
-# This is the STRICTEST documented posture for these features:
-#   approvals on (so the bot's approval counts toward branch protection),
-#   author self-approval OFF, chat restricted to organization members.
-# kirasec-research1 is a plain organization MEMBER whose effective repository
-# permission is read (org default_repository_permission: read, no collaborator
-# entry), and under this configuration they can still run @coderabbitai resolve
-# and @coderabbitai approve on a maintainer's pull request.
+# Left in place for CodeRabbit triage of finding b979463c.
+# STRICTEST documented posture: approvals on so the bot's review counts toward
+# branch protection, author self-approval off, chat restricted to organization
+# members. kirasec-research1 is a plain organization MEMBER with the
+# organization's default_repository_permission set to "none", so the
+# organization has granted it nothing on this repository, and it can still run
+# @coderabbitai approve on a maintainer's pull request.
+# To reproduce the author_association NONE variant instead, remove that account
+# from the organization and set chat.allow_non_org_members back to its default
+# of true.
 language: en-US
 reviews:
   profile: chill
   auto_approvals:
     enabled: true
     allow_author_approval: false
-chat:
-  allow_non_org_members: false
+# chat.allow_non_org_members left at its DEFAULT (true) for the KIRASEC stranger test
