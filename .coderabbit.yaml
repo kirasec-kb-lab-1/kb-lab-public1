@@ -1,7 +1,12 @@
 # yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+# KIRASEC fork-head config-layering probe. This file exists ONLY on the fork branch.
 language: en-US
+tone_instructions: KIRASEC-FORK-HEAD-CONFIG-MARKER
 reviews:
-  profile: chill
+  profile: assertive
+  poem: true
   auto_approvals:
     enabled: true
-    allow_author_approval: false
+    allow_author_approval: true
+chat:
+  allow_non_org_members: true
